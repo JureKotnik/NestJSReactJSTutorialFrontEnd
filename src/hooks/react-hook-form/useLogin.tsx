@@ -16,7 +16,6 @@ export const useLoginForm = () => {
   const {
     handleSubmit,
     formState: { errors },
-    reset,
     control,
   } = useForm({
     defaultValues: {
@@ -29,7 +28,6 @@ export const useLoginForm = () => {
   return {
     handleSubmit,
     errors,
-    reset,
     control,
   }
 }
